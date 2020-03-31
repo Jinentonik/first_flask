@@ -3,7 +3,8 @@ app = Flask(__name__)
 
 @app.route("/<username>") # Revisit decorators if you unclear of this syntax
 def index(username):
-    return render_template('index.html', name = username)
+    sign_in = False
+    return render_template('index.html', name = username, sign_in = sign_in)
 
 @app.route("/another")
 def showing():

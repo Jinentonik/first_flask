@@ -12,7 +12,12 @@
 </head>
 <body>
     <h1>Wassup Man!!</h1>
-    <h2>It's been long time {{name}}</h2>
+    {% if sign_in %}
+        <h2>It's been long time {{name}}</h2>
+    {%else%}
+        <h2>I do not know you!!</h2>
+    {% endif %}
+    
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus reiciendis suscipit laborum nihil, quod at voluptatibus earum explicabo quas molestias beatae repellendus voluptas in sunt perspiciatis placeat itaque minima!</p>
     
 </body>

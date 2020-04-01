@@ -11,6 +11,8 @@
     </style>
 </head>
 <body>
+    {%extends 'main.html'%}
+    {% block content %}
     <h1>Wassup Man!!</h1>
     {% if sign_in %}
         <h2>It's been long time {{name}}</h2>
@@ -20,5 +22,6 @@
     
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus reiciendis suscipit laborum nihil, quod at voluptatibus earum explicabo quas molestias beatae repellendus voluptas in sunt perspiciatis placeat itaque minima!</p>
     
+    {% endblock %}
 </body>
 </html>
